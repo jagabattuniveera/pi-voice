@@ -68,7 +68,7 @@ class VoiceUI:
         self._lock = threading.Lock()
         self._dirty = threading.Event()
 
-        wake = os.getenv("WAKE_WORD", "hey_veera")
+        wake = os.getenv("WAKE_WORD", "hey_jarvis")
         self._idle_text = "PRESS ENTER" if wake.lower() == "none" else f"SAY \"{wake.replace('_', ' ').upper()}\""
 
         if os.getenv("LCD", "1") == "0":
