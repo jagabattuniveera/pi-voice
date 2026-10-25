@@ -13,7 +13,7 @@ After=network.target sound.target
 
 [Service]
 WorkingDirectory=%h/pi-voice
-Environment=WAKE_WORD=hey_veera
+Environment=WAKE_WORD=hey_jarvis
 Environment=LLM_MODEL=qwen2.5:1.5b
 # Environment=AUDIO_IN=1
 # Environment=AUDIO_OUT=0

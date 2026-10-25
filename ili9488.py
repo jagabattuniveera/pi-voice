@@ -6,14 +6,14 @@ The ILI9488 only accepts 18-bit colour over SPI, so every pixel is sent as
 3 bytes (R, G, B) - exactly what PIL's img.tobytes() produces for an RGB image.
 
 Wiring (SPI0):                       Pi header pin
-  VCC   -> 5V (or 3.3V, see module)  2
+  VCC   -> 5V (or 3.3V, see module)  1
   GND   -> GND                       6
   CS    -> GPIO8  (CE0)              24
   RESET -> GPIO25                    22
   DC/RS -> GPIO24                    18
   SDI   -> GPIO10 (MOSI)             19
   SCK   -> GPIO11 (SCLK)             23
-  LED   -> 3.3V (or GPIO18 for PWM)  1 / 12
+  LED   -> 3.3V (or GPIO18 for PWM)  17
   SDO   -> leave unconnected (display never needs to be read)
 
 Run this file directly for a test pattern + live clock:

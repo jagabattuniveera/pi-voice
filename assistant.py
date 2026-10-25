@@ -10,7 +10,7 @@ Env vars (all optional):
   AUDIO_IN / AUDIO_OUT   sounddevice device index or name substring
   LLM_MODEL              default qwen2.5:1.5b
   WHISPER_MODEL          default base.en  (tiny.en = faster, small.en = more accurate)
-  WAKE_WORD              default hey_veera   (set to "none" for push-to-talk via Enter)
+  WAKE_WORD              default hey_jarvis   (set to "none" for push-to-talk via Enter)
   WAKE_THRESHOLD         default 0.5
 """
 import json
@@ -41,7 +41,7 @@ NO_SPEECH_TIMEOUT_S = 6
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434")
 LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:1.5b")
 WHISPER_MODEL = os.getenv("WHISPER_MODEL", "base.en")
-WAKE_WORD = os.getenv("WAKE_WORD", "hey_veera")
+WAKE_WORD = os.getenv("WAKE_WORD", "hey_jarvis")
 WAKE_THRESHOLD = float(os.getenv("WAKE_THRESHOLD", "0.7"))
 VOICE = BASE / "voices" / os.getenv("PIPER_VOICE", "en_US-lessac-medium.onnx")
 
